@@ -1,0 +1,10 @@
+# DRAFT — this build is a client review copy hosted on GitHub Pages.
+# Before public launch, replace this file with the production version below.
+User-agent: *
+Disallow: /
+
+# --- PRODUCTION VERSION (swap in at launch) ---
+# User-agent: *
+# Allow: /
+#
+# Sitemap: https://sierrapeakscapital.com/sitemap.xml
