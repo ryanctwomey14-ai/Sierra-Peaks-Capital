@@ -563,7 +563,9 @@ table{border-collapse:collapse;width:100%}
 @media (max-width:620px){.xsteps{grid-template-columns:1fr}}
 
 /* image placeholders — styled so the comp still reads as intentional */
-.imgband{margin:0}
+/* Zero only the UA figure inline margin — a blanket margin:0 here silently
+   beat the mt-* utility on the element and collapsed the gap. */
+.imgband{margin:clamp(3rem,6vw,5.5rem) 0 0}
 .bandimg{
   display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;
   border:1px solid var(--line);
