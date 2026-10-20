@@ -26,10 +26,10 @@ cannot be indexed under the Sierra Peaks name. **Remove both before launch.**
    handler in `assets/js/site.js` to a CRM or form endpoint.
 4. **The scheduler is a placeholder.** Paste a Calendly / SavvyCal / HubSpot embed
    into `.embed-slot` in `book-a-call.html`.
-5. **Two figures conflict.** Hold period reads 3–7 years on the homepage and FAQ,
-   3–5 years on the strategy page. The stated targets are also not internally
-   consistent: 15–20% IRR over a 7-year hold implies roughly 2.7–3.6×, well above
-   the stated 1.8–2.2× multiple. Reconcile before publishing.
+5. **Targets were reconciled; the calculator still runs low.** Hold is 3–7 years on every
+   page and the multiple is 1.9–2.3×, which matches 15–20% IRR with 7–10% distributions
+   over a ~5-year hold. The returns calculator's assumptions (8.5% cash, 7.5% equity
+   growth) still produce ~14% IRR, below the stated target. Confirm with the client.
 6. **Replace `sierrapeakscapital.com`** in canonical URLs, Open Graph tags and the
    sitemap with the live domain.
 

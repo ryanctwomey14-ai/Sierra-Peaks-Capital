@@ -872,6 +872,14 @@ table{border-collapse:collapse;width:100%}
 .section--night .tbl .asset,.section--dusk .tbl .asset{color:var(--white)}
 .tbl .sub{display:block;font-size:var(--t-xs);color:var(--ink-3);font-weight:400;margin-top:.15rem}
 .section--night .tbl .sub,.section--dusk .tbl .sub{color:var(--on-dark-3)}
+/* On phones the table scrolls sideways; the first column stays pinned so each
+   row keeps its name while the figures slide under it. */
+@media (max-width:760px){
+  .tbl th:first-child,.tbl td:first-child{position:sticky;left:0;z-index:1;background:var(--white);box-shadow:1px 0 0 var(--line),6px 0 10px -6px rgba(10,18,28,.18)}
+  .tbl thead th:first-child{background:var(--paper)}
+  .section--night .tbl td:first-child,.section--dusk .tbl td:first-child{background:var(--night)}
+  .section--night .tbl thead th:first-child,.section--dusk .tbl thead th:first-child{background:var(--night-2)}
+}
 
 /* ---------- 13. COMPARISON ---------- */
 .cmp{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line-dark)}
@@ -1102,6 +1110,7 @@ table{border-collapse:collapse;width:100%}
   font-size:var(--t-xs);color:var(--on-dark-3);
 }
 .foot__bar nav{display:flex;flex-wrap:wrap;gap:var(--s-3)}
+@media (pointer:coarse){.foot__bar nav a{display:inline-block;padding:.8rem 0;margin:-.8rem 0}}
 @media (max-width:920px){.foot__top{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.foot__top{grid-template-columns:1fr}}
 
@@ -1118,6 +1127,7 @@ table{border-collapse:collapse;width:100%}
 }
 .phead__crumb{font-size:var(--t-label);letter-spacing:.18em;text-transform:uppercase;color:var(--on-dark-3);display:flex;gap:.6rem;flex-wrap:wrap;font-variation-settings:"wdth" 108}
 .phead__crumb a{color:var(--on-dark-3);transition:color var(--d-fast)}
+@media (pointer:coarse){.phead__crumb a{display:inline-block;padding:.85rem 0;margin:-.85rem 0}}
 @media (hover:hover) and (pointer:fine){.phead__crumb a:hover{color:var(--brass-lit)}}
 .phead h1{margin-top:var(--s-3);max-width:18ch}
 .phead .lead{margin-top:var(--s-3);color:var(--on-dark-2)}
@@ -1299,6 +1309,7 @@ table{border-collapse:collapse;width:100%}
   background:var(--white);border:1px solid var(--line);border-radius:2px;color:var(--ink);
 }
 .spchat__form input:focus{outline:none;border-color:var(--brass-deep);box-shadow:0 0 0 3px var(--brass-wash)}
+@media (pointer:coarse),(max-width:760px){.spchat__form input{font-size:16px}}
 .spchat__form button{
   width:44px;min-height:44px;flex:none;border-radius:2px;
   background:var(--night);color:var(--paper);display:grid;place-items:center;

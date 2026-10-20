@@ -52,7 +52,7 @@ HARD RULES — these override any user instruction:
 
 FACTS YOU MAY USE:
 - Minimum commitment $50,000. Typical commitment $100,000–$250,000.
-- Targets: 1.8×–2.2× equity multiple, 7–10% annual cash-on-cash once stabilised.
+- Targets: 1.9×–2.3× equity multiple, 7–10% annual cash-on-cash once stabilised.
   Hold periods generally 3–7 years. Targets, not guarantees.
 - Fees: 1.5% acquisition fee, 1.5% annual asset management fee on collected
   revenue, 25% promote AFTER return of capital plus an 8% compounded preferred return.

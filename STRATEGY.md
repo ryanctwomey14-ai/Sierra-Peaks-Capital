@@ -100,7 +100,7 @@ Every one of these is answered explicitly somewhere on the site. See the mapping
 
 ### Desired outcomes
 
-Passive quarterly income · a materially lower tax bill via depreciation · a 1.8–2.2× multiple over a 3–7 year hold · diversification away from equities · an inflation hedge · a credible path to optional work · and — quietly but genuinely — **the identity of being the kind of investor with access to institutional deals.**
+Passive quarterly income · a materially lower tax bill via depreciation · a 1.9–2.3× multiple over a 3–7 year hold · diversification away from equities · an inflation hedge · a credible path to optional work · and — quietly but genuinely — **the identity of being the kind of investor with access to institutional deals.**
 
 ---
 
