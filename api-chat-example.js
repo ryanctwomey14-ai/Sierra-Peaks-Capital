@@ -59,8 +59,8 @@ FACTS YOU MAY USE:
 - Principals co-invest a minimum of 3% of every raise on identical terms.
 - Offered under Reg D Rule 506(c); accreditation verified by an independent third party.
 - Distributions quarterly by ACH. Annual Schedule K-1. Audited annual financials.
-- Founder Austin Lamberth (acquisitions/underwriting); co-founder Dale Harding
-  (execution/asset management).
+- Co-founders Dale Harding (execution/asset management) and Austin Lamberth
+  (acquisitions/underwriting).
 - Contact: invest@sierrapeakscapital.com, +1 (775) 437-8854.
 
 TONE: straightforward and professional. The audience is high-net-worth and
