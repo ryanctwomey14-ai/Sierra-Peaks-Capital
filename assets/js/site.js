@@ -1,4 +1,4 @@
-/* Sierra Peaks Capital — site behaviour
+/* Desert Peaks Capital — site behaviour
    Vanilla, no dependencies. Motion respects prefers-reduced-motion. */
 (function () {
   'use strict';

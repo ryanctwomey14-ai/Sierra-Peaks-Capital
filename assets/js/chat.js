@@ -1,5 +1,5 @@
 /* ============================================================
-   Sierra Peaks Capital — investor assistant
+   Desert Peaks Capital — investor assistant
    ------------------------------------------------------------
    Two modes:
 
@@ -25,7 +25,7 @@
   // weight: how strongly a term implies this intent (2 = distinctive)
   var KB = [
     { id: 'greet', w: { hi: 2, hello: 2, hey: 2, 'good morning': 2, 'good afternoon': 2 },
-      a: 'Hello. I can answer questions about how Sierra Peaks invests, what the process looks like, fees, tax treatment and eligibility. What would you like to know?' },
+      a: 'Hello. I can answer questions about how Desert Peaks invests, what the process looks like, fees, tax treatment and eligibility. What would you like to know?' },
 
     { id: 'minimum', w: { minimum: 2, min: 1, 'how much': 2, smallest: 2, invest: 1, commitment: 2, ticket: 2 },
       a: 'The minimum commitment is $50,000 per offering. Most limited partners commit between $100,000 and $250,000. There is no maximum, though we may cap any single investor’s share of a raise to keep the partnership diversified.' },
@@ -58,7 +58,7 @@
       a: 'We target emerging markets where growth is still ahead of pricing — areas with committed economic development, constrained new supply, deep rental demand, and population and job growth in the 1.5–2% range year over year.\n\nSpecific markets and submarkets under evaluation are discussed with verified accredited investors during diligence.' },
 
     { id: 'team', w: { who: 2, team: 3, founder: 3, principal: 2, austin: 3, lamberth: 3, dale: 3, harding: 3, background: 2, experience: 1 },
-      a: 'Sierra Peaks Capital was co-founded by Dale Harding, who focuses on execution and asset management, and Austin Lamberth, who leads acquisitions and underwriting.\n\nBoth principals underwrite every acquisition personally and handle investor communication directly — there is no intermediary between you and the people making the decisions.' },
+      a: 'Desert Peaks Capital was co-founded by Dale Harding, who focuses on execution and asset management, and Austin Lamberth, who leads acquisitions and underwriting.\n\nBoth principals underwrite every acquisition personally and handle investor communication directly — there is no intermediary between you and the people making the decisions.' },
 
     { id: 'risk', w: { risk: 3, risks: 3, lose: 3, 'lose money': 3, safe: 2, danger: 2, downside: 3, 'worst case': 3, fail: 2, guarantee: 2 },
       a: 'This is a speculative investment and you can lose some or all of your capital. The principal risks are illiquidity, leverage — which magnifies losses as well as gains — real estate market conditions, operator and key-person risk, concentration, and the possibility that distributions are reduced or suspended.\n\nNothing here is guaranteed. The complete risk factors are set out on our Disclosures page and in the offering documents, and you should read them in full.' },
@@ -91,7 +91,7 @@
 
     /* ---------- guardrails ---------- */
     { id: 'advice', guard: true, w: { 'should i invest': 4, 'should i': 3, 'is this right for me': 4, 'do you recommend': 4, 'what would you do': 4, 'is it a good investment': 4, advise: 3, advice: 3 },
-      a: 'I am not able to give personalised investment advice, and Sierra Peaks is not a registered investment adviser. Whether this suits you depends on your tax position, liquidity needs and the rest of your portfolio — questions for you and your own adviser.\n\nWhat I can do is set out how the investment works so you can assess it properly, and the principals will give you a straight view on fit during an introductory call.',
+      a: 'I am not able to give personalised investment advice, and Desert Peaks is not a registered investment adviser. Whether this suits you depends on your tax position, liquidity needs and the rest of your portfolio — questions for you and your own adviser.\n\nWhat I can do is set out how the investment works so you can assess it properly, and the principals will give you a straight view on fit during an introductory call.',
       cta: true },
 
     { id: 'guarantee', guard: true, w: { guarantee: 4, guaranteed: 4, 'promise': 3, 'risk free': 4, 'sure thing': 3, 'how much will i make': 4 },
@@ -132,20 +132,21 @@
   }
 
   /* ---------------- markup ---------------- */
-  var MARK = 'assets/img/sierra-peaks-mark.png';
+  var MARK = 'assets/img/desert-peaks-mark-white.svg';      // launcher: shown dark on the gold disc
+  var MARK_GOLD = 'assets/img/desert-peaks-mark.svg';  // panel header: gold on obsidian
   // pages all sit at the root, so a plain relative path is fine
   var root = document.createElement('div');
   root.className = 'spchat';
   root.innerHTML =
     '<button class="spchat__launch" type="button" aria-expanded="false" aria-controls="spchat-panel"' +
-    ' aria-label="Open the Sierra Peaks investor assistant">' +
-      '<img class="spchat__mark" src="' + MARK + '" alt="" width="403" height="305">' +
+    ' aria-label="Open the Desert Peaks investor assistant">' +
+      '<img class="spchat__mark" src="' + MARK + '" alt="" width="420" height="300">' +
       '<span class="spchat__close" aria-hidden="true"></span>' +
     '</button>' +
     '<div class="spchat__panel" id="spchat-panel" role="dialog" aria-modal="false"' +
-    ' aria-label="Sierra Peaks investor assistant" hidden>' +
+    ' aria-label="Desert Peaks investor assistant" hidden>' +
       '<div class="spchat__head">' +
-        '<img src="' + MARK + '" alt="" width="403" height="305">' +
+        '<img src="' + MARK_GOLD + '" alt="" width="420" height="300">' +
         '<div><strong>Investor assistant</strong><span>Typically replies instantly</span></div>' +
         '<button class="spchat__x" type="button" aria-label="Close assistant">&times;</button>' +
       '</div>' +
@@ -278,11 +279,11 @@
     // next frame so the transition runs from the collapsed state
     requestAnimationFrame(function () { root.classList.add('is-open'); });
     launch.setAttribute('aria-expanded', 'true');
-    launch.setAttribute('aria-label', 'Close the Sierra Peaks investor assistant');
+    launch.setAttribute('aria-label', 'Close the Desert Peaks investor assistant');
     if (!opened) {
       opened = true;
       renderChips();
-      bubble('bot', 'Hello. I can answer questions about how Sierra Peaks invests — minimums, fees, tax treatment, the process and eligibility.\n\nWhat would you like to know?');
+      bubble('bot', 'Hello. I can answer questions about how Desert Peaks invests — minimums, fees, tax treatment, the process and eligibility.\n\nWhat would you like to know?');
     }
     window.setTimeout(function () { input.focus(); }, reduce ? 0 : 220);
   }
@@ -290,7 +291,7 @@
   function close() {
     root.classList.remove('is-open');
     launch.setAttribute('aria-expanded', 'false');
-    launch.setAttribute('aria-label', 'Open the Sierra Peaks investor assistant');
+    launch.setAttribute('aria-label', 'Open the Desert Peaks investor assistant');
     // Drive the hide off transitionend rather than a timer — background tabs
     // throttle timers, which would leave the panel in the DOM.
     var hide = function () { panel.hidden = true; };

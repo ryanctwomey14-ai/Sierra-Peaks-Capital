@@ -1,4 +1,4 @@
-# Sierra Peaks Capital — website
+# Desert Peaks Capital — website
 
 Static marketing site for a private multifamily real estate sponsor. Plain HTML,
 one CSS file, two vanilla JS files. No build step, no dependencies, no framework.
@@ -11,7 +11,7 @@ one CSS file, two vanilla JS files. No build step, no dependencies, no framework
 
 Every page carries `<meta name="robots" content="noindex, nofollow">` and
 `robots.txt` disallows all crawlers, so the placeholder financial figures below
-cannot be indexed under the Sierra Peaks name. **Remove both before launch.**
+cannot be indexed under the Desert Peaks name. **Remove both before launch.**
 
 ### Must be resolved before this goes live
 
@@ -66,13 +66,17 @@ so you never review a stale page. It is for review only — do not deploy it.
 
 ## Design
 
-One typeface site-wide: **Archivo** (variable width and weight), set at `wdth 115`
-for display to match the geometry of the wordmark. Emphasis inside headings is
-carried by brass colour rather than italic, since the mark has no italic form.
+Typefaces: **Jost** for headings (the wordmark's typeface) and **Hanken Grotesk**
+for running text. Emphasis inside headings is carried by gold colour rather than
+italic.
 
-Palette is "blue hour" — `#0A121C` night, `#16283C` dusk, `#EFF1F4` paper,
-`#C08B3E` brass. Every text pair was checked against WCAG AA and every non-text
-UI element against 3:1.
+Palette follows the Desert Peaks logo: `#0E0E0F` obsidian, `#1C1A17` charcoal,
+`#F1EBDF` ivory, `#D6B26B` gold, `#8B857B` smoke. Every text pair was checked
+against WCAG AA and every non-text UI element against 3:1.
+
+Logo files live in `assets/img/desert-peaks-*` (SVG with outlined lettering, plus
+PNG social and icon images). The stock background videos are warmed with a CSS
+filter to sit with the gold palette.
 
 Motion respects `prefers-reduced-motion` throughout. Scroll reveals are
 progressive enhancement: without JS, content renders at full opacity rather than

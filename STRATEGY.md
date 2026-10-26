@@ -1,4 +1,4 @@
-# Sierra Peaks Capital — Website Strategy & Build Notes
+# Desert Peaks Capital — Website Strategy & Build Notes
 
 Everything on this site derives from the decisions below. If you change the strategy, change the pages.
 
@@ -172,7 +172,7 @@ Every section has one job, one objection it kills, and one reason it improves co
 | 5 | **Why apartments** | Authority and market thesis | 4, 11 | Four structural statistics + a pull quote. Establishes that returns come from *demographics and mechanism*, not from the sponsor being clever. |
 | 6 | **How it works** | Remove process anxiety | 3, 8 | Four steps, then explicitly "and then nothing." Uncertainty about *process* stalls more high-ticket deals than doubt about the product. |
 | 7 | **Track record** | Hard proof | 2 | The complete table — realised and active — with the underperformer left in and called out by name in a callout box directly beneath. **This is the highest-trust element on the site.** Publishing your worst deal is a credibility signal a competitor cannot cheaply copy. |
-| 8 | **Comparison** | Frame the real alternatives | 3, 5 | Four columns: Sierra Peaks / public REIT / your own rental / index fund. **We deliberately lose two rows** (liquidity, control). Conceding real weaknesses makes the wins believable, and it pre-qualifies out the people who would have churned at month thirty. |
+| 8 | **Comparison** | Frame the real alternatives | 3, 5 | Four columns: Desert Peaks / public REIT / your own rental / index fund. **We deliberately lose two rows** (liquidity, control). Conceding real weaknesses makes the wins believable, and it pre-qualifies out the people who would have churned at month thirty. |
 | 9 | **Team** | Put faces to the wire | 1, 6 | Real photographs, real names, specific credentials, both partners' responsibilities separated. Objection 1 is answered by a face, not a paragraph. |
 | 10 | **Testimonials** | Peer proof | 1 | Placeholders sized for real quotes. Peer proof is the strongest trigger in this segment because "a colleague mentioned it" is how most of them arrive. |
 | 11 | **Risk & transparency** | Disarm and qualify | 3, 4, 7 | Counterintuitive but decisive: stating the four real downsides *before* the CTA raises conversion on the leads you want and suppresses the leads you don't. Also a securities-law necessity, so it does double duty. |
