@@ -388,7 +388,10 @@ table{border-collapse:collapse;width:100%}
   /* keep the primary CTA above the fold on a phone */
   .hero__mark{width:min(40vw,150px);margin-bottom:.85rem}
 }
-.hero__title{margin-top:0;max-width:19ch;margin-inline:auto}
+/* Two lines on desktop: the break after "strategic" is explicit, and the size
+   scales with the viewport so the longer first line always fits. Phones wrap freely. */
+.hero__title{margin-top:0;margin-inline:auto;font-size:min(var(--t-hero),5.2vw)}
+@media (max-width:760px){.hero__title{font-size:var(--t-hero);max-width:19ch}.hero__br{display:none}}
 .hero__title em{color:var(--brass-lit);font-style:normal;font-weight:700}
 .hero__lead{margin-top:var(--s-3);max-width:54ch;margin-inline:auto;color:var(--on-dark-2);font-size:var(--t-lead)}
 .hero__cta{margin-top:var(--s-4);justify-content:center}
