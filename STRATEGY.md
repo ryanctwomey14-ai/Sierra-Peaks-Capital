@@ -263,7 +263,7 @@ Unique title and meta description per page · single `<h1>` per page · canonica
 
 ## 9. Design direction
 
-**Concept: "Blue Hour."** Deep dusk, warm interior light. The homepage hero plays `assets/video/sierra-hero.mp4` full-bleed behind the headline; the hand-built SVG ridgeline sits beneath it as the fallback for a failed load, a blocked autoplay, or a reduced-motion preference.
+**Concept: "Blue Hour."** Deep dusk, warm interior light. The homepage hero plays `assets/video/desert-hero.mp4` full-bleed behind the headline; the hand-built SVG ridgeline sits beneath it as the fallback for a failed load, a blocked autoplay, or a reduced-motion preference.
 
 ### Tokens
 
